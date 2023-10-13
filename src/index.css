@@ -1,3 +1,236 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    margin: 0;
+    background-color: #5a5f49;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar {
+    background-color: #333; /* Dark background color for the navbar */
+    overflow: hidden; /* Clear floats */
+}
+.navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Make the links block elements */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    /* padding: 14px 16px; Add some padding to the links */
+    text-decoration: none; /* Remove underline from links */
+}
+.navbar a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: black; /* Black text color on hover */
+}
+.navbarLogo {
+    float: left; /* Float the logo to the left */
+}
+nav {
+    float: left; /* Float the navigation links to the left */
+}
+.navbar a:last-child {
+    margin-right: 20px;
+}
+
+
+/* Mobile, Tablet */
+@media only screen and (max-width: 880px) {
+    /* navbar */
+    .navbar a {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    /* about */
+    .aboutContainer {
+        padding: 20px;
+    }
+    .aboutContainer h1, h2 {
+        text-align: center;
+    }
+    .aboutContainer h2 {
+        font-size: 18px;
+        color: rgb(238, 238, 238);
+    }
+    .aboutDescription {
+        display: block;
+    }
+    .aboutDescription img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+    }
+    .aboutDescription p {
+        font-size: 16px;
+        text-align: center;
+    }
+    /* projects */
+    .projectsContainer {
+        padding: 20px;
+    }
+    .projectsDescription h1 {
+        text-align: center;
+    }
+    .projectsDescription p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .projectsItem {
+        background-color: gray;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .projectsDisplay img {
+        width: 100%;
+        height: 100%;
+    }
+    .projectsDisplay a {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    /* skills */
+    .skillsContainer {
+        padding: 20px;
+    }
+    .skillsDescription h1 {
+        text-align: center;
+    }
+    .skillsDescription p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .skillsDisplay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillsDisplay .item {
+        background-color: gray;
+        width: 60%;
+        height: 2rem;
+        font-size: 18px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    /* contact */
+    .contactContainer {
+        padding: 20px;
+        text-align: center;
+    }
+    #name, #email, #message {
+        width: 100%;
+        height: 2em;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: rgb(102, 146, 102);
+        color: white;
+        font-size: 16px;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* default */
+/* about */
+.aboutContainer {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.aboutContainer h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.aboutContainer h2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+}
+.aboutDescription {
+    display: flex;
+}
+.aboutDescription img {
+    width: 500px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.aboutDescription p {
+    font-size: 24px;
+}
+/* projects */
+.projectsContainer {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.projectsDescription h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.projectsDescription p {
+    font-size: 24px;
+    text-align: center;
+}
+.projectsItem {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.projectsDisplay img {
+    width: 30%;
+}
+.projectsDisplay a {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/* skills */
+.skillsContainer {
+    padding: 20px;
+}
+.skillsDescription h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.skillsDescription p {
+    font-size: 24px;
+    text-align: center;
+}
+.skillsDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillsDisplay .item {
+    background-color: gray;
+    width: 60%;
+    height: 2rem;
+    font-size: 24px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+/* contact */
+.contactContainer {
+    padding: 20px;
+    text-align: center;
+}
+.contactContainer h1 {
+    font-size: 35px;
+}
+.contactContainer p {
+    font-size: 24px;
+}
+#name, #email, #message {
+    width: 100%;
+    height: 2em;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+input[type="submit"] {
+    background-color: rgb(102, 146, 102);
+    color: white;
+    font-size: 16px;
+    width: 80%;
+    margin: 10px auto;
+}

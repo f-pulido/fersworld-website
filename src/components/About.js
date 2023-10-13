@@ -3,35 +3,17 @@ import React from "react";
 export default function About() {
     return (
         <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Hello World!
-                        {/* <br className="hidden lg:inline-block" /> */}
-                    </h1>
-                    <p className="mb-8 leading-relaxed">
-                        I'm Fernando Pulido, a senior at California State University, Monterey Bay, on a mission to transcend the boundaries of my potential.
-                        As a Computer Science major with a laser focus on Software Engineering, I thrive on turning intricate lines of code into innovative solutions. Join me on this digital adventure as I navigate the realms of technology, constantly pushing the boundaries of what's possible.
+            <div class="aboutContainer">
+                <h1>Meet Fernando!</h1>
+                <h2>Aspiring Software Engineer</h2>
+                <div class="aboutDescription">
+                    <img src="/portrait.JPG"/>
+                    <p>
+                        I'm Fernando Pulido, a senior at California State University, Monterey Bay, on a mission to transcend the boundaries of my
+                        potential. As a Computer Science major with a laser focus on Software Engineering, I thrive on turning intricate lines of code
+                        into innovative solutions. Join me on this digital adventure as I navigate the realms of technology, constantly pushing the boundaries
+                        of what's possible.
                     </p>
-                    <div className="flex justify-center">
-                        <a
-                            href="#contact"
-                            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                            Work With Me
-                        </a>
-                        <a
-                            href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                            See My Past Work
-                        </a>
-                    </div>
-                </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img
-                        className="object-cover object-center rounded"
-                        alt="hero"
-                        src="./portrait.jpg"
-                    />
                 </div>
             </div>
         </section>
