@@ -43,3 +43,18 @@ export const skills = [
     "HTML",
     "CSS"
 ];
+
+export const links = [
+    {
+        title: "LinkedIn",
+        link: "https://linkedin.com/in/f-pulido"
+    },
+    {
+        title: "GitHub",
+        link: "https://github.com/f-pulido"
+    },
+    {
+        title: "Portfolio",
+        link: "https://fersworld.com"
+    }
+];

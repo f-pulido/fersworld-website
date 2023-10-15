@@ -1,4 +1,3 @@
-import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
 
@@ -15,14 +14,16 @@ export default function Projects() {
                 </div>
                 <div class="projectsDisplay">
                     {projects.map((project) => (
-                        <a href={project.link} key={project.image}>
+                        
                         <div class="projectsItem">
+                            <a href={project.link} key={project.image}>
                             <div>
                                 <h1>{project.title} - {project.subtitle}</h1>
                             </div>
                             <img alt="gallery" src={project.image}/>
+                            </a>
                         </div>
-                        </a>
+                        
                     ))}
                 </div>
             </div>
